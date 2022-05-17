@@ -1,11 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useMemo } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { useMemo } from 'react'
+import { Disclosure, Menu } from '@headlessui/react'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Logo } from './Logo'
+import {CloseIcon} from "./CloseIcon";
+import {MenuIcon} from "./MenuIcon";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -37,7 +37,6 @@ const NavItem = ({ item }: { item: NavItem }) => {
 
 export default function Navigation() {
   const router = useRouter()
-  const localeButtonContent = LocaleMap[router.locale ?? 'en']
   const { t } = useTranslation('common')
 
   const navigation: NavItem[] = useMemo(
@@ -53,7 +52,7 @@ export default function Navigation() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="relative z-10 h-26 w-full bg-nav/[0.8] sm:px-6 lg:px-9">
+          <div className="relative z-10 h-26 w-full bg-nav/[0.8] px-4 lg:px-9">
             <div className="relative flex h-full items-center justify-between">
               <div className="flex h-full flex-1 items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex h-full flex-shrink-0 items-center">
@@ -67,14 +66,14 @@ export default function Navigation() {
                   </div>
                 </div>
               </div>
-              <div className="flex hidden h-full items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 md:hidden">
+              <div className="flex xl:hidden h-full items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 md:hidden">
                 <Menu as="div" className="relative ml-3">
                   <div className="flex items-center sm:hidden">
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-main hover:text-white">
                       {open ? (
-                        <XIcon className="block h-6 w-6" aria-hidden="true" />
+                        <CloseIcon aria-hidden="true" />
                       ) : (
-                        <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                        <MenuIcon aria-hidden="true" />
                       )}
                     </Disclosure.Button>
                   </div>
