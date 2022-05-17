@@ -60,7 +60,7 @@ export const Prizes = () => {
 
   return (
     <div>
-      <div className="mb-20">
+      <div className="mb-36">
         <HeaderSection content={t('prizes')} />
       </div>
       <div className="mt-16 grid grid-cols-3 grid-rows-4 gap-4 prize">

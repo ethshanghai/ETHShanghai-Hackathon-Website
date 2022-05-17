@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { Banner } from '../components/Banner'
 import { useTranslation } from 'next-i18next'
-import { SummitAgenda } from '../components/SummitAgenda'
+import { Schedule } from '../components/Schedule'
 import { Footer } from '../components/Footer'
 import { Speakers } from '../components/Speakers'
 import { Hosts } from '../components/Hosts'
@@ -14,6 +14,7 @@ import {Sponsors} from "../components/Sponsors";
 import {Prizes} from "../components/Prizes";
 import {WhyJoin} from "../components/WhyJoin";
 import {AboutUs} from "../components/AboutUs";
+import {Hero} from "../components/Hero";
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -39,6 +40,9 @@ const Home: NextPage = () => {
       </div>
       <main className="container m-auto p-8">
         <section className="mt-28">
+          <Hero />
+        </section>
+        <section className="mt-28">
           <CoHost />
         </section>
         <section className="mt-28">
@@ -47,14 +51,14 @@ const Home: NextPage = () => {
         <section className="mt-28">
           <Prizes />
         </section>
-        <section className="mt-28">
+        <section>
           <WhyJoin />
         </section>
         <section className="mt-28">
           <AboutUs />
         </section>
         <section className="mt-28">
-          <SummitAgenda />
+          <Schedule />
         </section>
       </main>
       <section>

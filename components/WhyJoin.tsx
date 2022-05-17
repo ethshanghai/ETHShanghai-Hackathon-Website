@@ -26,7 +26,7 @@ export const WhyJoin = () => {
   return (
     <div>
       <div className="mb-20">
-        <HeaderSection content={t('co_hosts')} />
+        <HeaderSection content={t('why_join')} />
       </div>
       <div className="mt-16 grid grid-cols-3 grid-rows-1 gap-7 px-16">
         {config.map(x => (
