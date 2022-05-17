@@ -24,7 +24,7 @@ interface NavItem {
 
 const NavItem = ({ item }: { item: NavItem }) => {
   return (
-    <div className="box-content inline-flex h-full items-center hover:border-b-4 hover:border-nav" key={item.name}>
+    <div className="inline-flex h-full items-center hover:border-y-4 hover:border-b-nav border-t-transparent" key={item.name}>
       <a
         href={item.href}
         className={classNames(item.current ? '' : '', 'rounded-md px-3 py-2 font-medium font-medium text-white')}
