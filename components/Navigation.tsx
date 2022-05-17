@@ -4,8 +4,8 @@ import { Disclosure, Menu } from '@headlessui/react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { Logo } from './Logo'
-import {CloseIcon} from "./CloseIcon";
-import {MenuIcon} from "./MenuIcon";
+import { CloseIcon } from './CloseIcon'
+import { MenuIcon } from './MenuIcon'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -24,11 +24,15 @@ interface NavItem {
 
 const NavItem = ({ item }: { item: NavItem }) => {
   return (
-    <div className="inline-flex h-full items-center hover:border-y-4 hover:border-b-nav border-t-transparent" key={item.name}>
+    <div
+      className="inline-flex h-full items-center hover:border-y-4 hover:border-b-nav border-t-transparent"
+      key={item.name}
+    >
       <a
         href={item.href}
         className={classNames(item.current ? '' : '', 'rounded-md px-3 py-2 font-medium font-medium text-white')}
-        aria-current={item.current ? 'page' : undefined}>
+        aria-current={item.current ? 'page' : undefined}
+      >
         {item.name}
       </a>
     </div>
@@ -52,7 +56,7 @@ export default function Navigation() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="relative z-10 h-26 w-full bg-nav/[0.8] px-4 lg:px-9">
+          <div className="relative z-10 h-26 w-full bg-nav/[0.8] px-4 lg:px-9" style={{ backdropFilter: 'blur(8px)' }}>
             <div className="relative flex h-full items-center justify-between">
               <div className="flex h-full flex-1 items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex h-full flex-shrink-0 items-center">
@@ -60,7 +64,7 @@ export default function Navigation() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex h-full space-x-4">
-                    {navigation.map((item) => (
+                    {navigation.map(item => (
                       <NavItem key={item.name} item={item} />
                     ))}
                   </div>
@@ -70,11 +74,7 @@ export default function Navigation() {
                 <Menu as="div" className="relative ml-3">
                   <div className="flex items-center sm:hidden">
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-main hover:text-white">
-                      {open ? (
-                        <CloseIcon aria-hidden="true" />
-                      ) : (
-                        <MenuIcon aria-hidden="true" />
-                      )}
+                      {open ? <CloseIcon aria-hidden="true" /> : <MenuIcon aria-hidden="true" />}
                     </Disclosure.Button>
                   </div>
                 </Menu>
@@ -84,7 +84,7 @@ export default function Navigation() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
-              {navigation.map((item) => (
+              {navigation.map(item => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
@@ -93,7 +93,8 @@ export default function Navigation() {
                     item.current ? '' : '',
                     'block rounded-md px-3 py-2 text-base font-medium text-white',
                   )}
-                  aria-current={item.current ? 'page' : undefined}>
+                  aria-current={item.current ? 'page' : undefined}
+                >
                   {item.name}
                 </Disclosure.Button>
               ))}
