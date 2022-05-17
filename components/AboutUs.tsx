@@ -9,7 +9,7 @@ export const AboutUs = () => {
   const { t } = useTranslation('common')
 
   return (
-    <div>
+    <div id={"about-us"}>
       <div className="mb-20">
         <HeaderSection content={t('about_us')} />
       </div>

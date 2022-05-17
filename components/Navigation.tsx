@@ -43,8 +43,8 @@ export default function Navigation() {
   const navigation: NavItem[] = useMemo(
     () => [
       { name: t('menu_join_discord'), href: '#', current: true },
-      { name: t('menu_about_us'), href: '#', current: false },
-      { name: t('menu_schedule'), href: '#', current: false },
+      { name: t('menu_about_us'), href: '#about-us', current: false },
+      { name: t('menu_schedule'), href: '#schedule', current: false },
     ],
     [],
   )

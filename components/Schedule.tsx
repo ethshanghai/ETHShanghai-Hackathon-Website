@@ -61,7 +61,7 @@ const agendaConfig = [
 export const Schedule = () => {
   const { t } = useTranslation('common')
   return (
-    <div className="flex flex-col gap-y-20 px-28 text-white mb-20">
+    <div id="schedule" className="flex flex-col gap-y-20 px-28 text-white mb-20">
       <HeaderSection content={t('schedule')} />
       <div className="flex flex-col gap-y-16">
         {agendaConfig.map(x => (
