@@ -60,10 +60,10 @@ export const Prizes = () => {
 
   return (
     <div>
-      <div className="mb-36">
+      <div className="mb-24">
         <HeaderSection content={t('prizes')} />
       </div>
-      <div className="mt-16 grid grid-cols-3 grid-rows-4 gap-4 prize">
+      <div className="grid grid-cols-3 grid-rows-4 gap-2 xl:gap-4 prize">
         {prizesConfig.map((x) => (
           x.image ? <div><img src={x.image} alt={'TODO'} /></div> : <div></div>
         ))}

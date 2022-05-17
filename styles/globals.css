@@ -24,10 +24,14 @@ html {
   content: '';
   display: inline-flex;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  right: -48px;
-  top: -18px;
+  @apply w-3;
+  @apply xl:w-6;
+  @apply h-3;
+  @apply xl:h-6;
+  @apply -right-4;
+  @apply xl:-right-6;
+  @apply -top-2;
+  @apply xl:-top-5;
   @apply bg-helper;
 }
 
@@ -36,7 +40,8 @@ html {
   display: inline-flex;
   position: absolute;
   width: 118px;
-  height: 30px;
+  @apply h-3;
+  @apply xl:h-6;
   left: 0;
   top: 24px;
   z-index: -1;
@@ -53,10 +58,15 @@ html {
   content: '';
   display: inline-flex;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: -8px;
-  top: -24px;
+  @apply w-3;
+  @apply xl:w-6;
+  @apply h-3;
+  @apply xl:h-6;
+  @apply left-2;
+  @apply xl:-left-1;
+  @apply -top-2;
+  @apply xl:-top-5;
+  @apply bg-helper;
   @apply bg-helper;
 }
 
@@ -65,7 +75,8 @@ html {
   display: inline-flex;
   position: absolute;
   width: 118px;
-  height: 30px;
+  @apply h-3;
+  @apply xl:h-6;
   right: -28px;
   top: 32px;
   z-index: -1;
@@ -84,5 +95,5 @@ html {
 
 .prize > div:nth-child(3n+2) {
   position: relative;
-  top: -120px;
+  top: -33%;
 }

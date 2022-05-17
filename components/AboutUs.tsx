@@ -11,7 +11,7 @@ export const AboutUs = () => {
   return (
     <div id={"about-us"}>
       <div className="mb-20">
-        <HeaderSection content={t('about_us')} />
+        <HeaderSection direction="reverse" content={t('about_us')} />
       </div>
       <div className="text-white flex flex-col gap-y-6">
         <div className="flex flex-col gap-y-3">

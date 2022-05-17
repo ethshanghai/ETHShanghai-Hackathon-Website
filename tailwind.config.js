@@ -42,6 +42,7 @@ module.exports = {
       },
       colors: {
         link: '#29036D',
+        note: "#00FFC2"
       },
     },
   },

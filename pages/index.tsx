@@ -1,18 +1,14 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import Navigation from '../components/Navigation'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { Banner } from '../components/Banner'
 import { useTranslation } from 'next-i18next'
 import { Schedule } from '../components/Schedule'
 import { Footer } from '../components/Footer'
-import { Speakers } from '../components/Speakers'
-import { Hosts } from '../components/Hosts'
-import { CommunitySupport } from '../components/CommunitySupport'
 import {CoHost} from "../components/CoHost";
 import {Sponsors} from "../components/Sponsors";
 import {Prizes} from "../components/Prizes";
-import {WhyJoin} from "../components/WhyJoin";
+import {Highlights} from "../components/Highlights";
 import {AboutUs} from "../components/AboutUs";
 import {Hero} from "../components/Hero";
 
@@ -52,7 +48,7 @@ const Home: NextPage = () => {
           <Prizes />
         </section>
         <section>
-          <WhyJoin />
+          <Highlights />
         </section>
         <section className="mt-28">
           <AboutUs />

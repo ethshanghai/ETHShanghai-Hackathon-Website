@@ -123,27 +123,27 @@ export const Sponsors = () => {
   return (
     <div className="text-white">
       <div className="mb-20">
-        <HeaderSection content={t('sponsors')} />
+        <HeaderSection content={t('sponsors')} direction="reverse"/>
       </div>
       <div>
-        <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">{t('sponsors_presenting')}</h4>
-        <div className="mt-16 grid grid-cols-4 grid-rows-1 gap-7">
+        <h4 className="inline-flex border-b-6 border-nav text-2xl xl:text-4xl font-bold leading-6">{t('sponsors_presenting')}</h4>
+        <div className="mt-16 grid grid-cols-3 xl:grid-cols-4 grid-rows-1 gap-3 xl:gap-7">
           {sponsorsConfig.map(x => (
-            <Card name={x.name} image={x.image} key={x.name} backgroundClass={'partner'} width={320} height={339} />
+            <img src={x.image} alt={x.name} />
           ))}
         </div>
       </div>
       <div className="mt-16">
-        <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">{t('sponsors_track')}</h4>
-        <div className="mt-16 grid grid-cols-5 grid-rows-4 gap-7">
+        <h4 className="inline-flex border-b-6 border-nav text-2xl xl:text-4xl font-bold leading-6">{t('sponsors_track')}</h4>
+        <div className="mt-16 grid grid-cols-3 xl:grid-cols-5 grid-rows-7 xl:grid-rows-4 gap-3 xl:gap-7">
           {trackConfig.map(x => (
             <img src={x.image} alt={x.name} />
           ))}
         </div>
       </div>
       <div className="mt-16">
-        <h4 className="inline-flex border-b-6 border-nav text-4xl font-bold leading-6">{t('community_support')}</h4>
-        <div className="mt-16 grid grid-cols-5 grid-rows-1 gap-7">
+        <h4 className="inline-flex border-b-6 border-nav text-2xl xl:text-4xl font-bold leading-6">{t('community_support')}</h4>
+        <div className="mt-16 grid grid-cols-3 xl:grid-cols-5 grid-rows-2 xl:grid-rows-1 gap-3 xl:gap-7">
           {communitySupport.map(x => (
             <img src={x.image} alt={x.name} />
           ))}
