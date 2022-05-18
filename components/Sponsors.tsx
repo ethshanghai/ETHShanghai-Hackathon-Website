@@ -128,12 +128,14 @@ const communitySupport = [
   },
   {
     name: 'D/C',
-    image: '/images/community-support/dc.svg',
+    image:
+      '/images/community-support/decode.png 1x, /images/community-support/decode@2x.png 2x, /images/community-support/decode@3x.png 3x',
     link: 'ttps://www.decode.build/',
   },
   {
     name: 'MetaJam',
-    image: '/images/community-support/meta_jam.svg',
+    image:
+      '/images/community-support/meta_jam.png 1x, /images/community-support/meta_jam@2x.png 2x, /images/community-support/meta_jam@3x.png 3x',
     link: 'https://www.metajam.studio/',
   },
   {
@@ -152,37 +154,37 @@ export const Sponsors = () => {
         <HeaderSection content={t('sponsors')} direction="reverse" />
       </div>
       <div>
-        <h4 className="inline-flex border-b-6 border-nav text-2xl xl:text-4xl font-bold leading-6">
+        <h4 className="inline-flex border-b-6 border-nav text-2xl font-bold leading-6 xl:text-4xl">
           {t('sponsors_presenting')}
         </h4>
-        <div className="mt-12 grid grid-cols-3 xl:grid-cols-4 grid-rows-1 gap-3 xl:gap-7">
-          {sponsorsConfig.map(x => (
+        <div className="mt-12 grid grid-cols-3 grid-rows-1 gap-3 xl:grid-cols-4 xl:gap-7">
+          {sponsorsConfig.map((x) => (
             <a key={x.image} target="_blank" className="inline-flex" href={x.link}>
-              <img src={x.image} alt={x.name} />
+              {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
             </a>
           ))}
         </div>
       </div>
       <div className="mt-16">
-        <h4 className="inline-flex border-b-6 border-nav text-2xl xl:text-4xl font-bold leading-6">
+        <h4 className="inline-flex border-b-6 border-nav text-2xl font-bold leading-6 xl:text-4xl">
           {t('sponsors_track')}
         </h4>
-        <div className="mt-12 grid grid-cols-3 xl:grid-cols-5 grid-rows-7 xl:grid-rows-4 gap-3 xl:gap-7">
-          {trackConfig.map(x => (
+        <div className="grid-rows-7 mt-12 grid grid-cols-3 gap-3 xl:grid-cols-5 xl:grid-rows-4 xl:gap-7">
+          {trackConfig.map((x) => (
             <a key={x.image} target="_blank" className="inline-flex" href={x.link}>
-              <img src={x.image} alt={x.name} />
+              {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
             </a>
           ))}
         </div>
       </div>
       <div className="mt-16">
-        <h4 className="inline-flex border-b-6 border-nav text-2xl xl:text-4xl font-bold leading-6">
+        <h4 className="inline-flex border-b-6 border-nav text-2xl font-bold leading-6 xl:text-4xl">
           {t('community_support')}
         </h4>
-        <div className="mt-12 grid grid-cols-3 xl:grid-cols-5 grid-rows-2 xl:grid-rows-1 gap-3 xl:gap-7">
-          {communitySupport.map(x => (
+        <div className="mt-12 grid grid-cols-3 grid-rows-2 gap-3 xl:grid-cols-5 xl:grid-rows-1 xl:gap-7">
+          {communitySupport.map((x) => (
             <a key={x.image} target="_blank" className="inline-flex" href={x.link}>
-              <img src={x.image} alt={x.name} />
+              {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
             </a>
           ))}
         </div>

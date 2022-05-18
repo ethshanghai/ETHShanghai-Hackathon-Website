@@ -63,10 +63,16 @@ export const Prizes = () => {
       <div className="mb-24">
         <HeaderSection content={t('prizes')} />
       </div>
-      <div className="grid grid-cols-3 grid-rows-4 gap-2 xl:gap-4 prize">
-        {prizesConfig.map((x) => (
-          x.image ? <div key={x.name}><img src={x.image} alt={'TODO'} /></div> : <div></div>
-        ))}
+      <div className="prize grid grid-cols-3 grid-rows-4 gap-2 xl:gap-4">
+        {prizesConfig.map((x, index) =>
+          x.image ? (
+            <div key={x.name}>
+              <img src={x.image} alt={'TODO'} />
+            </div>
+          ) : (
+            <div key={index}></div>
+          ),
+        )}
       </div>
     </div>
   )
