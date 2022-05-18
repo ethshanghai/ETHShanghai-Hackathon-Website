@@ -23,19 +23,12 @@ export const CoHost = () => {
       <div className="mb-20">
         <HeaderSection content={t('co_hosts')} />
       </div>
-      <div className="mt-16 grid grid-rows-2 xl:grid-cols-4 grid-rows-1 gap-7">
-        <div className="hidden xl:block"></div>
-        {coHost.map((x) => (
-          <Card
-            name={x.name}
-            image={x.image}
-            key={x.name}
-            backgroundClass={'partner'}
-            width={320}
-            height={339}
-          />
+      <div className="mt-16 grid grid-rows-2 lg:grid-cols-4 grid-cols-2 grid-rows-1 gap-3 xl:gap-7">
+        <div className="hidden lg:block"></div>
+        {coHost.map(x => (
+          <Card name={x.name} image={x.image} key={x.name} backgroundClass={'partner'} />
         ))}
-        <div className="hidden xl:block"></div>
+        <div className="hidden lg:block"></div>
       </div>
     </div>
   )

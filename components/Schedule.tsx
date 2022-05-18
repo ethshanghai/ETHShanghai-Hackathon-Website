@@ -294,11 +294,11 @@ export const Schedule = () => {
             <h4 className="mb-9 text-2xl xl:text-4xl font-bold">{x.during}</h4>
             <div className="flex flex-col gap-y-8">
               {x.days.map(t => (
-                <div key={t.day} className="flex flex-col xl:flow-row gap-4 items-center mt-4">
+                <div key={t.day} className="flex flex-col xl:flex-row gap-4 items-center mt-4">
                   <div className="xl:w-1/5 text-right flex-grow-0 flex-shrink-0 text-note xl:text-white">
                     <time className="font-bold">{t.day}</time>
                   </div>
-                  <div className="flex xl:w-4/5 flex-grow-0 flex-shrink-0 gap-x-14 gap-y-9 flex-col bg-footer xl:bg-transparent p-6 xl:p-0">
+                  <div className="flex w-full xl:w-4/5 flex-grow-0 flex-shrink-0 gap-x-14 gap-y-9 flex-col bg-footer xl:bg-transparent p-6 xl:p-0">
                     {t.times.map(y => (
                       <div className="flex gap-x-12">
                         <div key={y.time + t.day} className="w-1/5 text-right flex-grow-0 flex-shrink-0">

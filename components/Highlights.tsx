@@ -28,7 +28,7 @@ export const Highlights = () => {
       <div className="mb-20">
         <HeaderSection content={t('why_join')} />
       </div>
-      <div className="mt-16 grid grid-cols-1 xl:grid-cols-3 grid-rows-1 gap-7 xl:px-16">
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 grid-rows-1 gap-7 xl:px-16">
         {config.map(x => (
           <InfoCard name={x.name} key={x.name} backgroundClass={'partner'} description={x.description} />
         ))}

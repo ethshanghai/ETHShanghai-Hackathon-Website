@@ -20,6 +20,7 @@ interface NavItem {
   name: string
   href: string
   current: boolean
+  target?: string
 }
 
 const NavItem = ({ item }: { item: NavItem }) => {
@@ -30,6 +31,7 @@ const NavItem = ({ item }: { item: NavItem }) => {
     >
       <a
         href={item.href}
+        target={item.target}
         className={classNames(item.current ? '' : '', 'rounded-md px-3 py-2 font-medium font-medium text-white')}
         aria-current={item.current ? 'page' : undefined}
       >
@@ -45,7 +47,7 @@ export default function Navigation() {
 
   const navigation: NavItem[] = useMemo(
     () => [
-      { name: t('menu_join_discord'), href: '#', current: true },
+      { name: t('menu_join_discord'), href: 'https://discord.com/invite/n4332P7Dab', target: "_blank", current: true },
       { name: t('menu_about_us'), href: '#about-us', current: false },
       { name: t('menu_schedule'), href: '#schedule', current: false },
     ],

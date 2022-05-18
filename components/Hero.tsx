@@ -16,7 +16,7 @@ export const Hero = () => {
       </div>
       <div className="mt-12 xl:px-16">
         <div>
-          <p className="text-center">
+          <p className="text-left">
             Join us for the ETH Shanghai hackathon. BUIDL the next generation of Web3 social application alongside with
             developers, creators, artists, and entrepreneur all over the world. Click here to read our proposal.
           </p>

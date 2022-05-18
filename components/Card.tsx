@@ -4,8 +4,6 @@ interface PartnerCardProps {
   name: string
   image: string
   backgroundClass: string
-  width?: number
-  height?: number
 }
 
 export const Card = ({
@@ -15,8 +13,8 @@ export const Card = ({
 }: PartnerCardProps) => {
   return (
     <div className={`${backgroundClass} rounded-2.5xl bg-speaker-master text-white`}>
-      <div className="p-6">
-        <div>
+      <div className="p-3 xl:p-6">
+        <div className="flex justify-center">
           <img src={image} alt={'TODO'} />
         </div>
         <div className="mt-2.5 flex flex-col justify-center gap-y-3">

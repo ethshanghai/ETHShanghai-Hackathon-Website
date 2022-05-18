@@ -93,6 +93,11 @@ html {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.hover-shadow:hover {
+  box-shadow: 0 6px 12px rgba(0, 255, 194, 0.4);
+  backdrop-filter: blur(16px);
+}
+
 .prize > div:nth-child(3n+2) {
   position: relative;
   top: -33%;

@@ -24,8 +24,8 @@ const Home: NextPage = () => {
         <Banner>
           <div className="mb-16 flex flex-col justify-center gap-y-6 text-white">
             <div className="flex justify-center">
-              <button className="flex w-1/2 justify-center bg-helper py-3 text-2xl font-bold text-link" style={{width: 229}}>
-                <span className="inline-flex">Apply</span>
+              <button className="flex w-1/2 justify-center bg-helper py-3 text-2xl font-bold text-link hover-shadow" style={{width: 229}}>
+                <a href="https://gitcoin.co/hackathon/ethshanghai/onboard" target="_blank" className="inline-flex">Apply</a>
               </button>
             </div>
             <div>
