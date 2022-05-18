@@ -20,7 +20,8 @@ const trackConfig = [
   },
   {
     name: 'HASH GLOBAL',
-    image: '/images/sponsors/hashglobal.svg',
+    image:
+      '/images/sponsors/hashglobal.png 1x, /images/sponsors/hashglobal@2x.png 2x, /images/sponsors/hashglobal@3x.png 3x',
     link: 'https://twitter.com/hashglobal',
   },
   {
@@ -60,7 +61,8 @@ const trackConfig = [
   },
   {
     name: 'The Graph',
-    image: '/images/sponsors/the_graph.svg',
+    image:
+      '/images/sponsors/the_graph.png 1x, /images/sponsors/the_graph@2x.png 2x, /images/sponsors/the_graph@3x.png 3x',
     link: 'https://thegraph.com/',
   },
   {
@@ -75,7 +77,7 @@ const trackConfig = [
   },
   {
     name: 'meson',
-    image: '/images/sponsors/meson.svg',
+    image: '/images/sponsors/meson.png 1x, /images/sponsors/meson@2x.png 2x, /images/sponsors/meson@3x.png 3x',
     link: 'https://meson.network/',
   },
   {
@@ -85,7 +87,7 @@ const trackConfig = [
   },
   {
     name: 'ceramic',
-    image: '/images/sponsors/ceramic.svg',
+    image: '/images/sponsors/ceramic.png 1x, /images/sponsors/ceramic@2x.png 2x, /images/sponsors/ceramic@3x.png 3x',
     link: 'https://ceramic.network/',
   },
   {
@@ -110,12 +112,14 @@ const trackConfig = [
   },
   {
     name: 'collab_land',
-    image: '/images/sponsors/collab_land.svg',
+    image:
+      '/images/sponsors/collab_land.png 1x, /images/sponsors/collab_land@2x.png 2x, /images/sponsors/collab_land@3x.png 3x',
     link: 'https://collab.land/',
   },
   {
     name: 'lit_protocol',
-    image: '/images/sponsors/lit_protocol.svg',
+    image:
+      '/images/sponsors/lit_protocol.png 1x, /images/sponsors/lit_protocol@2x.png 2x, /images/sponsors/lit_protocol@3x.png 3x',
     link: 'https://litprotocol.com/',
   },
   {
@@ -145,7 +149,8 @@ const communitySupport = [
   },
   {
     name: 'Scroll',
-    image: '/images/community-support/scroll.svg',
+    image:
+      '/images/community-support/scroll.png 1x, /images/community-support/scroll@2x.png 2x, /images/community-support/scroll@3x.png 3x',
     link: 'https://scroll.io/',
   },
 ]
