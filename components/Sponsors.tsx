@@ -118,6 +118,11 @@ const trackConfig = [
     image: '/images/sponsors/lit_protocol.svg',
     link: 'https://litprotocol.com/',
   },
+  {
+    name: 'omniverse',
+    image: '/images/sponsors/omniverse.svg',
+    link: '#',
+  },
 ]
 
 const communitySupport = [
@@ -169,7 +174,7 @@ export const Sponsors = () => {
         <h4 className="inline-flex border-b-6 border-nav text-2xl font-bold leading-6 xl:text-4xl">
           {t('sponsors_track')}
         </h4>
-        <div className="grid-rows-7 mt-12 grid grid-cols-3 gap-3 xl:grid-cols-5 xl:grid-rows-4 xl:gap-7">
+        <div className="grid-rows-8 mt-12 grid grid-cols-3 gap-3 xl:grid-cols-5 xl:grid-rows-5 xl:gap-7">
           {trackConfig.map((x) => (
             <a key={x.image} target="_blank" className="inline-flex" href={x.link}>
               {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}

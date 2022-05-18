@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               </button>
             </div>
             <div>
-              <p className="text-center text-2xl font-semibold">Apply before 5/17/2022</p>
+              <p className="text-center text-2xl font-semibold">Apply before 5/20/2022</p>
             </div>
           </div>
         </Banner>

@@ -13,7 +13,8 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop] </b>
+                  Workshop 🛠
+                  <b> ENS integration</b>
                   hosted by Makoto from ENS
                 </p>
               </div>
@@ -24,7 +25,7 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>Team Formation Session</b>
+                  <b> Team Formation Session</b>
                   join Discord team forming channel prior to this live session
                 </p>
               </div>
@@ -40,8 +41,9 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop] </b>
-                  Building APIs to index blockchain data using The Graph protocol by Pranav
+                  Workshop 🛠
+                  <b> Building APIs to index blockchain data using The Graph protocol</b>
+                  by Pranav from The Graph.
                 </p>
               </div>
             ),
@@ -51,8 +53,9 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop] </b>
-                  Zero to Mint in 1 Hour: Create and deploy an NFT DApp and workshop Hosted by Emily Lin from ConsenSys
+                  Workshop 🛠
+                  <b> Zero to Mint in 1 Hour: Create and deploy an NFT DApp and workshop Hosted</b>
+                  by Emily Lin from ConsenSys
                 </p>
               </div>
             ),
@@ -62,8 +65,9 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop] </b>
-                  How to break a smart contract: common security vulnerabilities hosted by Chris Anatalio from ConsenSys
+                  Workshop 🛠
+                  <b> How to break a smart contract: common security vulnerabilities hosted</b>
+                  by Chris Anatalio from ConsenSys
                 </p>
               </div>
             ),
