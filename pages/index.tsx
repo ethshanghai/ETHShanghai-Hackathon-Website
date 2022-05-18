@@ -23,8 +23,8 @@ const Home: NextPage = () => {
         <meta name="twitter:site" content="@realMaskNetwork" />
         <meta name="twitter:title" content="ETH SHANGHAI Hackathon" />
         <meta name="twitter:description" content="Taking place(on air) May 20 - Jun3, 2020" />
-        <meta name="twitter:image" content="https://eth-shanghai-hackathon-website.vercel.app/images/share-card.jpg" />
-        <meta property="og:image" content="https://eth-shanghai-hackathon-website.vercel.app/images/share-card.jpg" />
+        <meta name="twitter:image" content="/images/share-card.jpg" />
+        <meta property="og:image" content="/images/share-card.jpg" />
       </Head>
       <header>
         <Navigation />
