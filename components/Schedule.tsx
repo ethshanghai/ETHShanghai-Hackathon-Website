@@ -13,7 +13,7 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop]</b>
+                  <b>[Workshop] </b>
                   hosted by Makoto from ENS
                 </p>
               </div>
@@ -40,7 +40,7 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop]</b>
+                  <b>[Workshop] </b>
                   Building APIs to index blockchain data using The Graph protocol by Pranav
                 </p>
               </div>
@@ -51,7 +51,7 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop]</b>
+                  <b>[Workshop] </b>
                   Zero to Mint in 1 Hour: Create and deploy an NFT DApp and workshop Hosted by Emily Lin from ConsenSys
                 </p>
               </div>
@@ -62,7 +62,7 @@ const agendaConfig = [
             content: (
               <div>
                 <p>
-                  <b>[Workshop]</b>
+                  <b>[Workshop] </b>
                   How to break a smart contract: common security vulnerabilities hosted by Chris Anatalio from ConsenSys
                 </p>
               </div>
