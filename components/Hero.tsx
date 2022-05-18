@@ -10,8 +10,10 @@ export const Hero = () => {
   return (
     <div className="text-white">
       <div className="flex justify-center">
-        <div className="flex justify-center text-white xl:w-1/2">
-          <h3 className={`inline-flex text-3xl xl:text-5xl font-bold text-center`}>#BUIDL THE FUTURE OF WEB3 SOCIAL</h3>
+        <div className="flex justify-start text-white">
+          <h3 className={`text-3xl xl:text-5xl font-bold text-center hexo-first-letter`}>
+            BUIDL THE FUTURE OF WEB3 SOCIAL
+          </h3>
         </div>
       </div>
       <div className="mt-12 xl:px-16">
@@ -23,7 +25,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="mt-24 -mx-8 xl:mx-0">
-        <img src="/images/banner/hero.svg"/>
+        <img src="/images/banner/hero.svg" />
       </div>
     </div>
   )

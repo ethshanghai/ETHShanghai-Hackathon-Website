@@ -65,7 +65,7 @@ export const Prizes = () => {
       </div>
       <div className="grid grid-cols-3 grid-rows-4 gap-2 xl:gap-4 prize">
         {prizesConfig.map((x) => (
-          x.image ? <div><img src={x.image} alt={'TODO'} /></div> : <div></div>
+          x.image ? <div key={x.name}><img src={x.image} alt={'TODO'} /></div> : <div></div>
         ))}
       </div>
     </div>
