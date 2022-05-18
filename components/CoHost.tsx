@@ -13,7 +13,7 @@ const coHost = [
   {
     name: 'Ethereum Foundation',
     image: '/images/co-hosts/ethereum_foundation.svg',
-    link: "https://ethereum.org/en/foundation/"
+    link: "https://ethereum.org/en/"
   },
 ]
 
