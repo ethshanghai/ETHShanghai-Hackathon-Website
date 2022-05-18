@@ -11,7 +11,7 @@ export const Hero = () => {
     <div className="text-white">
       <div className="flex justify-center">
         <div className="flex justify-start text-white">
-          <h3 className={`text-3xl xl:text-5xl font-bold text-center hexo-first-letter`}>
+          <h3 className={`hexo-first-letter text-center text-3xl font-bold xl:text-5xl`}>
             BUIDL THE FUTURE OF WEB3 SOCIAL
           </h3>
         </div>
@@ -24,8 +24,8 @@ export const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="mt-24 -mx-8 xl:mx-0">
-        <img src="/images/banner/hero.svg" />
+      <div className="-mx-8 mt-24 xl:mx-0">
+        <img srcSet="/images/banner/hero.png 1x, /images/banner/hero@2x.png 2x, /images/banner/hero@3x.png 3x" />
       </div>
     </div>
   )
