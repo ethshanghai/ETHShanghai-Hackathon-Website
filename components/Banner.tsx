@@ -11,8 +11,17 @@ export const Banner = ({ children }: BannerProps) => {
       <div className="absolute top-0 left-0 z-10 block h-full w-full">
         <Image src={'/images/banner/eth_shanghai.gif'} layout="fill" objectFit="cover" alt={'TODO'} />
       </div>
+      <div className="absolute top-0 left-0 z-0 block h-full w-full">
+        <img
+          srcSet={
+            '/images/banner/eth_shanghai.png 1x, /images/banner/eth_shanghai@2x.png 2x, /images/banner/eth_shanghai@3x.png 3x,'
+          }
+          alt={'banner'}
+          className="h-full object-cover"
+        />
+      </div>
       <div className="container z-20 m-auto">
-        <div className="flex items-end justify-center absolute bottom-10 left-0 w-full">
+        <div className="absolute bottom-10 left-0 flex w-full items-end justify-center">
           <div>{children}</div>
         </div>
       </div>

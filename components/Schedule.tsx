@@ -300,7 +300,7 @@ export const Schedule = () => {
                   </div>
                   <div className="flex w-full flex-shrink-0 flex-grow-0 flex-col gap-x-14 gap-y-9 bg-footer p-6 xl:w-4/5 xl:bg-transparent xl:p-0">
                     {t.times.map((y, index) => (
-                      <div key={y.time + t.day + index} className="flex gap-x-12">
+                      <div key={y.time + t.day + index} className="flex gap-x-4 xl:gap-x-12">
                         <div className="w-1/5 flex-shrink-0 flex-grow-0 text-right">
                           <time>{y.time}</time>
                         </div>
