@@ -11,12 +11,21 @@ import {Prizes} from "../components/Prizes";
 import {Highlights} from "../components/Highlights";
 import {AboutUs} from "../components/AboutUs";
 import {Hero} from "../components/Hero";
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
 
   return (
     <div className="flex min-h-screen flex-col bg-main">
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@realMaskNetwork" />
+        <meta name="twitter:title" content="ETH SHANGHAI Hackathon" />
+        <meta name="twitter:description" content="Taking place(on air) May 20 - Jun3, 2020" />
+        <meta name="twitter:image" content="https://eth-shanghai-hackathon-website.vercel.app/share-card.jpg" />
+        <meta property="og:image" content="https://eth-shanghai-hackathon-website.vercel.app/share-card.jpg" />
+      </Head>
       <header>
         <Navigation />
       </header>
