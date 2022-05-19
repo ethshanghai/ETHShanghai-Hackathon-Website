@@ -12,6 +12,7 @@ import { Highlights } from '../components/Highlights'
 import { AboutUs } from '../components/AboutUs'
 import { Hero } from '../components/Hero'
 import Head from 'next/head'
+import { Judges } from '../components/Judges'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -85,6 +86,9 @@ const Home: NextPage = () => {
         </section>
         <section className="mt-28">
           <Schedule />
+        </section>
+        <section className="mt-28">
+          <Judges />
         </section>
       </main>
       <section>

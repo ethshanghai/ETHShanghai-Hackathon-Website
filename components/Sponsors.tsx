@@ -14,9 +14,9 @@ const sponsorsConfig = [
 
 const trackConfig = [
   {
-    name: 'consensys',
-    image: '/images/sponsors/consensys.svg',
-    link: 'https://consensys.net/',
+    name: 'ETH',
+    image: '/images/sponsors/eth.png 1x, /images/sponsors/eth@2x.png 2x, /images/sponsors/eth@3x.png 3x',
+    link: 'https://ethereum.org/en/',
   },
   {
     name: 'HASH GLOBAL',
@@ -25,9 +25,10 @@ const trackConfig = [
     link: 'https://twitter.com/hashglobal',
   },
   {
-    name: 'INFURA',
-    image: '/images/sponsors/infura.svg',
-    link: 'https://infura.io/',
+    name: 'omniverse',
+    image:
+      '/images/sponsors/omniverse.png 1x, /images/sponsors/omniverse@2x.png 2x, /images/sponsors/omniverse@3x.png 3x',
+    link: '#',
   },
   {
     name: 'Mask Network',
@@ -101,6 +102,11 @@ const trackConfig = [
     link: 'https://cyberconnect.me/',
   },
   {
+    name: 'INFURA',
+    image: '/images/sponsors/infura.svg',
+    link: 'https://infura.io/',
+  },
+  {
     name: 'ETH Sign',
     image: '/images/sponsors/eth_sign.svg',
     link: 'https://www.ethsign.xyz/',
@@ -109,6 +115,11 @@ const trackConfig = [
     name: 'kwil',
     image: '/images/sponsors/kwil.svg',
     link: 'https://kwil.com/',
+  },
+  {
+    name: 'consensys',
+    image: '/images/sponsors/consensys.svg',
+    link: 'https://consensys.net/',
   },
   {
     name: 'collab_land',
@@ -121,11 +132,6 @@ const trackConfig = [
     image:
       '/images/sponsors/lit_protocol.png 1x, /images/sponsors/lit_protocol@2x.png 2x, /images/sponsors/lit_protocol@3x.png 3x',
     link: 'https://litprotocol.com/',
-  },
-  {
-    name: 'omniverse',
-    image: '/images/sponsors/omniverse.svg',
-    link: '#',
   },
 ]
 

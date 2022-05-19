@@ -66,8 +66,8 @@ const agendaConfig = [
               <div>
                 <p>
                   Workshop 🛠
-                  <b> How to break a smart contract: common security vulnerabilities hosted</b>
-                  by Chris Anatalio from ConsenSys
+                  <b> How to break a smart contract: common security vulnerabilities </b>
+                  hosted by Chris Anatalio from ConsenSys
                 </p>
               </div>
             ),
