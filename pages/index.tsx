@@ -19,12 +19,29 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col bg-main">
       <Head>
+        <title>ETH SHANGHAI Hackathon</title>
+        <meta
+          name="description"
+          content="Join us for the ETH Shanghai hackathon. BUIDL the next generation of Web3 social application alongside with developers, creators, artists, and entrepreneur all over the world."
+        />
+        <meta property="og:title" content="ETH SHANGHAI Hackathon" />
+        <meta
+          property="og:description"
+          content="Join us for the ETH Shanghai hackathon. BUIDL the next generation of Web3 social application alongside with developers, creators, artists, and entrepreneur all over the world."
+        />
+        <meta property="og:site_name" content="ETH SHANGHAI Hackathon" />
+        <meta property="og:image" content="https://hackathon.ethshanghai.org/images/share-card.jpg" />
+        <meta property="og:url" content="https://hackathon.ethshanghai.org/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://hackathon.ethshanghai.org/images/share-card.jpg" />
+        <meta itemProp="name" content="ETH SHANGHAI Hackathon" />
+        <meta itemProp="description" content="Web 3.0 Developer Summit, taking place on May 20, 2022" />
+        <meta itemProp="image" content="https://hackathon.ethshanghai.org/images/share-card.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@realMaskNetwork" />
         <meta name="twitter:title" content="ETH SHANGHAI Hackathon" />
         <meta name="twitter:description" content="Taking place (on air) May 20 - Jun3, 2020" />
-        <meta name="twitter:image" content="https://eth-shanghai-hackathon-website.vercel.app/images//share-card.jpg" />
-        <meta property="og:image" content="https://eth-shanghai-hackathon-website.vercel.app/images//share-card.jpg" />
+        <meta name="twitter:image" content="https://hackathon.ethshanghai.org/images/share-card.jpg" />
       </Head>
       <header>
         <Navigation />
