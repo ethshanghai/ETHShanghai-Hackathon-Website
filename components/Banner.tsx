@@ -7,7 +7,7 @@ interface BannerProps {
 
 export const Banner = ({ children }: BannerProps) => {
   return (
-    <section className="relative z-0 flex h-200 bg-no-repeat">
+    <section className="relative z-0 flex h-200 bg-no-repeat" style={{ maxHeight: 'calc(100vh - 104px)' }}>
       <div className="absolute top-0 left-0 z-10 block h-full w-full">
         <Image src={'/images/banner/eth_shanghai.gif'} layout="fill" objectFit="cover" alt={'TODO'} />
       </div>
