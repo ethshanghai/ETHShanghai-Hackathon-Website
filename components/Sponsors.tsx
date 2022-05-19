@@ -28,7 +28,7 @@ const trackConfig = [
     name: 'omniverse',
     image:
       '/images/sponsors/omniverse.png 1x, /images/sponsors/omniverse@2x.png 2x, /images/sponsors/omniverse@3x.png 3x',
-    link: '#',
+    link: 'https://omniverse.capital',
   },
   {
     name: 'Mask Network',
