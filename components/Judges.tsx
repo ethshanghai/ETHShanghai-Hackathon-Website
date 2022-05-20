@@ -40,7 +40,7 @@ const speakerMasters = (t: any) => [
   {
     name: 'Henry',
     description: 'Developer Relations @Moonbeam',
-    image: "'/images/judges/henry.jpg 1x, /images/judges/henry@2x.jpg 2x, /images/judges/henry@3x.jpg 3x",
+    image: "'/images/judges/henry_1.jpg 1x, /images/judges/henry_1@2x.jpg 2x, /images/judges/henry_1@3x.jpg 3x",
   },
   {
     name: 'Yuki Pan',
