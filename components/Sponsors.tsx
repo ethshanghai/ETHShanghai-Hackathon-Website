@@ -212,7 +212,7 @@ export const Sponsors = () => {
             <a
               key={x.image}
               target="_blank"
-              className="inline-flex max-h-32 justify-center rounded-lg bg-support p-6"
+              className="inline-flex h-28 justify-center rounded-lg bg-support p-6 xl:h-32"
               href={x.link}>
               {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
             </a>
