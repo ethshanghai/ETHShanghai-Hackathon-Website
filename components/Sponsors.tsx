@@ -6,6 +6,16 @@ import { Card } from './Card'
 
 const sponsorsConfig = [
   {
+    name: 'Mask Network',
+    image: '/images/sponsors/mask.svg',
+    link: 'https://mask.io/',
+  },
+  {
+    name: 'Next ID',
+    image: '/images/sponsors/next_id.svg',
+    link: 'https://next.id',
+  },
+  {
     name: 'ChainIDE',
     image: '/images/sponsors/chain_ide.svg',
     link: 'https://chainide.com/',
@@ -29,11 +39,6 @@ const trackConfig = [
     image:
       '/images/sponsors/omniverse.png 1x, /images/sponsors/omniverse@2x.png 2x, /images/sponsors/omniverse@3x.png 3x',
     link: 'https://omniverse.capital',
-  },
-  {
-    name: 'Mask Network',
-    image: '/images/sponsors/mask.svg',
-    link: 'https://mask.io/',
   },
   {
     name: 'Arweave',
@@ -65,11 +70,6 @@ const trackConfig = [
     image:
       '/images/sponsors/the_graph.png 1x, /images/sponsors/the_graph@2x.png 2x, /images/sponsors/the_graph@3x.png 3x',
     link: 'https://thegraph.com/',
-  },
-  {
-    name: 'Next ID',
-    image: '/images/sponsors/next_id.svg',
-    link: 'https://next.id',
   },
   {
     name: 'RSS3',
@@ -159,6 +159,16 @@ const communitySupport = [
       '/images/community-support/scroll.png 1x, /images/community-support/scroll@2x.png 2x, /images/community-support/scroll@3x.png 3x',
     link: 'https://scroll.io/',
   },
+  {
+    name: 'ETHPlanet',
+    image: '/images/community-support/ethplanet.svg',
+    link: 'https://www.ethplanet.org/',
+  },
+  {
+    name: '原语里弄',
+    image: '/images/community-support/yuanyu.svg',
+    link: 'https://www.primitiveslane.org/',
+  },
 ]
 
 export const Sponsors = () => {
@@ -173,7 +183,7 @@ export const Sponsors = () => {
         <h4 className="inline-flex border-b-6 border-nav text-2xl font-bold leading-6 xl:text-4xl">
           {t('sponsors_presenting')}
         </h4>
-        <div className="mt-12 grid grid-cols-3 grid-rows-1 gap-3 xl:grid-cols-4 xl:gap-7">
+        <div className="mt-12 grid grid-cols-3 grid-rows-1 gap-3 xl:grid-cols-5 xl:gap-7">
           {sponsorsConfig.map((x) => (
             <a key={x.image} target="_blank" className="inline-flex" href={x.link}>
               {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
@@ -197,9 +207,13 @@ export const Sponsors = () => {
         <h4 className="inline-flex border-b-6 border-nav text-2xl font-bold leading-6 xl:text-4xl">
           {t('community_support')}
         </h4>
-        <div className="mt-12 grid grid-cols-3 grid-rows-2 gap-3 xl:grid-cols-5 xl:grid-rows-1 xl:gap-7">
+        <div className="mt-12 grid grid-cols-3 grid-rows-2 gap-3 xl:grid-cols-5 xl:grid-rows-2 xl:gap-7">
           {communitySupport.map((x) => (
-            <a key={x.image} target="_blank" className="inline-flex" href={x.link}>
+            <a
+              key={x.image}
+              target="_blank"
+              className="inline-flex max-h-32 justify-center rounded-lg bg-support p-6"
+              href={x.link}>
               {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
             </a>
           ))}
