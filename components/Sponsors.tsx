@@ -133,6 +133,11 @@ const trackConfig = [
       '/images/sponsors/lit_protocol.png 1x, /images/sponsors/lit_protocol@2x.png 2x, /images/sponsors/lit_protocol@3x.png 3x',
     link: 'https://litprotocol.com/',
   },
+  {
+    name: 'y2z ventures',
+    image: '/images/sponsors/y2z_ventures.svg',
+    link: 'https://y2z.io',
+  },
 ]
 
 const communitySupport = [
@@ -212,7 +217,7 @@ export const Sponsors = () => {
             <a
               key={x.image}
               target="_blank"
-              className="inline-flex h-28 justify-center rounded-lg bg-support p-6 xl:h-32"
+              className="inline-flex h-16 justify-center rounded-lg bg-support p-2 md:h-28 md:p-4 xl:h-32 xl:p-6"
               href={x.link}>
               {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
             </a>

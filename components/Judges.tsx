@@ -121,7 +121,7 @@ const speakerMasters = (t: any) => [
   },
   {
     name: 'Wu Xiao',
-    description: 'CEO of White Matrix &Founder of ChainlDE@ChainIDE',
+    description: 'CEO of White Matrix &Founder of ChainlDE',
     image: '/images/judges/wu_xiao.jpg 1x, /images/judges/wu_xiao@2x.jpg 2x, /images/judges/wu_xiao@3x.jpg 3x',
   },
   {
@@ -189,7 +189,7 @@ const speakerMasters = (t: any) => [
   },
   {
     name: 'Alen Zhang',
-    description: 'Founder@y2z Capital',
+    description: 'Founder@y2z Ventures',
     image: '/images/judges/alen_zhang.jpg 1x, /images/judges/alen_zhang@2x.jpg 2x, /images/judges/alen_zhang@3x.jpg 3x',
   },
   {
