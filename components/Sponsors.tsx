@@ -134,9 +134,9 @@ const trackConfig = [
     link: 'https://litprotocol.com/',
   },
   {
-    name: 'y2z ventures',
-    image: '/images/sponsors/y2z_ventures.svg',
-    link: 'https://y2z.io',
+    name: 'rct ai',
+    image: '/images/sponsors/rct.png 1x, /images/sponsors/rct@2x.png 2x, /images/sponsors/rct@3x.png 3x',
+    link: 'https://rct.ai',
   },
 ]
 
