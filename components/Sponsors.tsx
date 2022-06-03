@@ -134,6 +134,11 @@ const trackConfig = [
     link: 'https://litprotocol.com/',
   },
   {
+    name: 'y2z ventures',
+    image: '/images/sponsors/y2z_ventures.svg',
+    link: 'https://y2z.io',
+  },
+  {
     name: 'rct ai',
     image: '/images/sponsors/rct.png 1x, /images/sponsors/rct@2x.png 2x, /images/sponsors/rct@3x.png 3x',
     link: 'https://rct.ai',
@@ -202,7 +207,11 @@ export const Sponsors = () => {
         </h4>
         <div className="grid-rows-8 mt-12 grid grid-cols-3 gap-3 xl:grid-cols-5 xl:grid-rows-5 xl:gap-7">
           {trackConfig.map((x) => (
-            <a key={x.image} target="_blank" className="inline-flex" href={x.link}>
+            <a
+              key={x.image}
+              target="_blank"
+              className="inline-flex h-16 justify-center rounded-lg bg-support md:h-28 lg:p-2 xl:h-32 xl:p-4"
+              href={x.link}>
               {x.image.includes('.svg') ? <img src={x.image} alt={x.name} /> : <img srcSet={x.image} alt={x.name} />}
             </a>
           ))}
