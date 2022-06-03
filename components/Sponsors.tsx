@@ -35,6 +35,16 @@ const trackConfig = [
     link: 'https://twitter.com/hashglobal',
   },
   {
+    name: 'bonfire union',
+    image: '/images/sponsors/bonfire_union.svg',
+    link: 'https://mask.io/',
+  },
+  {
+    name: 'y2z ventures',
+    image: '/images/sponsors/y2z_ventures.svg',
+    link: 'https://y2z.io',
+  },
+  {
     name: 'omniverse',
     image:
       '/images/sponsors/omniverse.png 1x, /images/sponsors/omniverse@2x.png 2x, /images/sponsors/omniverse@3x.png 3x',
@@ -132,11 +142,6 @@ const trackConfig = [
     image:
       '/images/sponsors/lit_protocol.png 1x, /images/sponsors/lit_protocol@2x.png 2x, /images/sponsors/lit_protocol@3x.png 3x',
     link: 'https://litprotocol.com/',
-  },
-  {
-    name: 'y2z ventures',
-    image: '/images/sponsors/y2z_ventures.svg',
-    link: 'https://y2z.io',
   },
   {
     name: 'rct ai',
