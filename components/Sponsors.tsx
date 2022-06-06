@@ -46,8 +46,7 @@ const trackConfig = [
   },
   {
     name: 'omniverse',
-    image:
-      '/images/sponsors/omniverse.png 1x, /images/sponsors/omniverse@2x.png 2x, /images/sponsors/omniverse@3x.png 3x',
+    image: '/images/sponsors/omniverse.svg',
     link: 'https://omniverse.capital',
   },
   {
