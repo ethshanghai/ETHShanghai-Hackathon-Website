@@ -54,13 +54,13 @@ const Home: NextPage = () => {
               <button
                 className="hover-shadow flex w-1/2 justify-center bg-helper py-3 text-xl font-bold text-link xl:text-2xl"
                 style={{ width: 229 }}>
-                <a href="https://gitcoin.co/hackathon/ethshanghai/onboard" target="_blank" className="inline-flex">
-                  Register Now
+                <a
+                  href="https://gitcoin.co/hackathon/ethshanghai/projects/?org=abridged"
+                  target="_blank"
+                  className="inline-flex">
+                  View Winners
                 </a>
               </button>
-            </div>
-            <div>
-              <p className="text-center text-2xl font-semibold">Apply before 5/20/2022</p>
             </div>
           </div>
         </Banner>
